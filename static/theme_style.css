@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'pixel';
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url('font/Galmuri11-Bold.woff2') format('woff2');
+}
+
+
+body{
+    background-image: url('image/galaxy.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    width: 250px;
+    border: 1px solid #333;
+    background-color: rgb(235, 238, 215);
+    padding: 15px;
+}
+
+.calculator form{
+    display: grid;
+    grid-template-columns: repeat(3, 65px);
+    /* grid-template-rows: repeat(5, 65px); */
+    grid-auto-rows: 65px;
+    grid-gap: 5px;
+}
+
+.calculator form input{
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.calculator form input:hover{
+    box-shadow: 1px 1px 2px #333;
+}
+
+.calculator form .clear{
+    background-color: #f97e7e;
+}
+
+.calculator form .fasion{
+    background-color: hsl(192, 80%, 70%);
+    grid-column: span 3;
+}
+
+.calculator form .theme{
+    background-color: hsl(192, 80%, 70%);
+    grid-column: span 3;
+}
+
+.calculator form .operator{
+    background-color: rgb(250, 195, 93);
+}
+
+.calculator form .sunglass{
+    background-image: url('image/sunglass.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator form .hat{
+    background-image: url('image/hat.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .bag{
+    background-image: url('image/bag.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .mask{
+    background-image: url('image/mask.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .umbrella{
+    background-image: url('image/umbrella.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .spacesuit{
+    background-image: url('image/spacesuit.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .forest{
+    background-image: url('image/forest.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .beach{
+    background-image: url('image/beach.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator form .space{
+    background-image: url('image/space.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator form .dot{
+    background-color: green;
+}
+
+.calculator form input[type='text']{
+    grid-column: span 3;
+    text-align: right;
+    padding: 0 15px;
+}
+
+.calculator form .clear{
+    grid-column: span 3;
+}
+
+.calculator form .result{
+    grid-column: span 3;
+}

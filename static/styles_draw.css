@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('font/Galmuri11-Bold.woff2') format('woff2');
+}
+
+/* 
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'pixel';
+} */
+
+html {
+    height: 100vh;
+}
+
+#canvas {
+    border: 5px;
+    border-style: solid;
+    border-color: navy;
+    margin : 0 auto;
+    background-color: white;
+    
+}
+
+header {
+    font-family: 'pixel';
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* .img {
+    background-image: url(image/img.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 716px;
+} */
+
+#predict {
+
+    font-size: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+
+    font-size: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body {
+    font-family: 'pixel';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: url(image/image3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .img {
+    background-image: url("image/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.theme_1{
+    display: flex;
+    justify-content: center;
+    margin: 50px 500px 50px 500px;
+    border: 2px solid #333;
+    background: rgb(235, 238, 215);
+    border-radius: 10%;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-image: url(image/bottom_banner.png);
+    background-size: 800px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#predict {
+
+    border-style: none;
+}
+
+.results {
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.results img{
+    border: 3px solid #333;
+    background-color: white;
+}
+
+.calculator{
+    width: 205px;
+    /* border: 1px solid #333; */
+    background-color: rgb(235, 238, 215);
+    padding: 15px;
+    font-family: 'pixel';
+}
+
+.calculator form{
+    display: grid;
+    grid-template-columns: repeat(3, 65px);
+    /* grid-template-rows: repeat(5, 65px); */
+    grid-auto-rows: 65px;
+    grid-gap: 5px;
+}
+
+.calculator form input{
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.calculator form input:hover{
+    box-shadow: 1px 1px 2px #333;
+}
+
+.calculator form .clear{
+    background-color: #f97e7e;
+}
+
+.calculator form .fasion{
+    background-color: hsl(192, 80%, 70%);
+    grid-column: span 3;
+}
+
+.calculator form .theme{
+    background-color: hsl(192, 80%, 70%);
+    grid-column: span 3;
+    text-align: center;
+}
+
+.calculator form .operator{
+    background-color: rgb(250, 195, 93);
+}
+
+.calculator form .sunglass{
+    background-image: url('/static/image_theme/sunglass.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator form .hat{
+    background-image: url('/static/image_theme/hat.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .bag{
+    background-image: url('/static/image_theme/bag.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .mask{
+    background-image: url('/static/image_theme/mask.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .umbrella{
+    background-image: url('/static/image_theme/umbrella.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .spacesuit{
+    background-image: url('/static/image_theme/spacesuit.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .forest{
+    background-image: url('/static/image_theme/forest.png');
+    background-size: cover;
+    background-position: center;
+}
+.calculator form .beach{
+    background-image: url('/static/image_theme/beach.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator form .space{
+    background-image: url('/static/image_theme/space.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator form .dot{
+    background-color: green;
+}
+
+.calculator form input[type='text']{
+    grid-column: span 3;
+    text-align: right;
+    padding: 0 15px;
+}
+
+.calculator form .clear{
+    grid-column: span 3;
+}
+
+.calculator form .result{
+    grid-column: span 3;
+}

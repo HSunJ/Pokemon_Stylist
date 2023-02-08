@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Final</title>
+		<script
+			type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{ url_for('static', filename='style_final.css') }}"
+		/>
+		<script
+			type="text/javascript"
+			src="{{ url_for('static', filename='draw.js') }}"
+		></script>
+	</head>
+
+<header></header>
+
+	<body>
+		<div><h1>Results</h1></div>
+		<div class ="final_result">
+			<li>
+				<div>
+					<img src="\static\image_pokemon\output.jpg"> 
+				</div>
+			</li>
+		</div>
+		<div class="button_final">
+			<div>
+				<li><a href="\static\image_pokemon\output.jpg" download>이미지<br>다운로드</a></li>
+			</div>
+			<div>
+				<li><a onClick="window.location.reload()" style="cursor: pointer">다시 만들기</a></li>
+			</div>
+			<div>
+				<li><a href="{{ url_for('home') }}" class="btn">홈으로</a></li>
+			</div>
+    	 </div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing APP</title>
+		<script
+			type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{ url_for('static', filename='style_pre.css') }}"
+		/>
+		<script
+			type="text/javascript"
+			src="{{ url_for('static', filename='draw.js') }}"
+		></script>
+	</head>
+
+<header>Drawing App</header>
+
+	<body>
+		<div><h1>Results</h1></div>
+		<div class ="theme_1">
+			<div class="results">
+				<div><h3>당신이 그린 포켓몬을 customize하기위해<br> item&theme를 선택하세요!</h3></div>
+				{%if prediction == 'pikachu'%}
+				<img src="/static/image_pokemon/pikachu.png"> 
+				<h2 style="color: black">pikachu!</h2>
+				{%elif prediction == 'charmander'%}
+				<img src="/static/image_pokemon/charmander.png"> 
+				<h2 style="color: black">charmander!</h2>
+				{%elif prediction == 'Jigglypuff'%}
+				<img src="/static/image_pokemon/purin.png"> 
+				<h2 style="color: black">purin!</h2>
+				{%else%}
+				<img src="/static/image_pokemon/king.png"> 
+				<h2 style="color: black">king!</h2>
+				{%endif%}
+				<!-- <div>
+					<a href="/">홈으로</a>
+				</div> -->
+			</div>
+			<div class="calculator">
+				<form name="forms" action="/final">
+				<input type="hidden" name="pred" value="{{prediction}}">
+				<input type="text" name="output" readonly>
+				<input type="button" class="clear" value="clear" onclick="document.forms.output.value=''">
+		
+				<input type="button" class="fasion" value="item" >
+		
+				<input type="button" class="sunglass" onclick="document.forms.output.value='sunglass'">
+				<input type="button" class="hat" onclick="document.forms.output.value='hat'">
+				<input type="button" class="bag"  onclick="document.forms.output.value='bag'">
+				
+				<input type="button" class="mask" onclick="document.forms.output.value='mask'">
+				<input type="button" class="umbrella" onclick="document.forms.output.value='umbrella'">
+				<input type="button" class="spacesuit" onclick="document.forms.output.value='astronaut'">
+		
+				<input type="button" class="theme" value="theme" >
+		
+				<input type="button" class="forest" onclick="document.forms.output.value+=',forest'">
+				<input type="button" class="beach" onclick="document.forms.output.value+=',beach'">
+				<input type="button" class="space" onclick="document.forms.output.value+=',space'">
+				<!-- <input type="button" class="operator" value="+" onclick="document.forms.output.value+='+'"> -->
+				<!-- <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'"> -->
+				
+				<input type="submit" class="operator result" value="GO!" onClick="location.href='final'">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
